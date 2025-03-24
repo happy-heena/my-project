@@ -19,11 +19,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./my-project
+        working-directory: ./
 
       - name: Build
         run: npm run build
-        working-directory: ./my-project
+        working-directory: ./
 
       - name: SHOW AWS CLI VERSION
         env:
