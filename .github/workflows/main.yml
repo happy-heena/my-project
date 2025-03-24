@@ -41,5 +41,5 @@ jobs:
         run: |
           aws s3 sync \
             --region ap-northeast-2 \
-            ./my-project/dist s3://heena-portfolio-project \
+            ./dist s3://heena-portfolio-project \
             --delete
