@@ -19,11 +19,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./s3-cicd-project
+        working-directory: ./my-project
 
       - name: Build
         run: npm run build
-        working-directory: ./s3-cicd-project
+        working-directory: ./my-project
 
       - name: SHOW AWS CLI VERSION
         env:
@@ -40,6 +40,6 @@ jobs:
           AWS_EC2_METADATA_DISABLED: true
         run: |
           aws s3 sync \
-            --region us-east-1 \
-            ./s3-cicd-project/dist s3://heena-portfolio-project \
+            --region ap-northeast-2 \
+            ./my-project/dist s3://heena-portfolio-project \
             --delete
