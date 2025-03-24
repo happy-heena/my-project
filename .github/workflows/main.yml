@@ -19,11 +19,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./
 
       - name: Build
         run: npm run build
-        working-directory: ./
 
       - name: SHOW AWS CLI VERSION
         env:
@@ -41,5 +39,5 @@ jobs:
         run: |
           aws s3 sync \
             --region ap-northeast-2 \
-            ./dist s3://heena-portfolio-project \
+            dist s3://heena-portfolio-project \
             --delete
