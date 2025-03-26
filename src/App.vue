@@ -1,15 +1,9 @@
 <template>
-  <main>
-    <TopNav />
-    <Home />
-    <History />
-    <Contract />
-  </main>
+  <Layout />
 </template>
 
 <script setup lang="ts">
-import { TopNav } from '@/layout';
-import { Home, History, Contract } from '@/views';
+import { Layout } from './layout';
 </script>
 
 <style scoped></style>

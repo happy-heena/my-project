@@ -1,3 +1,2 @@
-import TopNav from './TopNav.vue';
-
-export { TopNav };
+export { default as Layout } from './Layout.vue';
+export * from './partials';
